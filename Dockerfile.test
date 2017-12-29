@@ -8,6 +8,7 @@ RUN pip install -r /src/requirements.txt
 
 # files
 COPY run.py /src
+COPY config.py /src
 COPY flaskr /src/flaskr
 
 # env

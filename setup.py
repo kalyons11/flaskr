@@ -11,8 +11,5 @@ setup(name='flaskr',
       url='hhttps://github.com/kalyons11/flaskr',
       author_email='kevinandrewlyons@gmail.com',
       license='MIT',
-      packages=find_packages(),
-      install_requires=[
-          'flask'
-      ]
+      packages=find_packages()
       )

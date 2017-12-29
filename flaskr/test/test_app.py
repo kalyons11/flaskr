@@ -3,7 +3,7 @@
 
 import unittest
 
-from flaskr.flaskr import app
+from flaskr import app
 
 
 class TestApp(unittest.TestCase):
