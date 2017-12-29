@@ -2,7 +2,7 @@ default: install test
 
 install:
 	pip install -r requirements.txt
-	pip install . --upgrade
+	pip install --editable .
 
 deploy:
 	pip install pipreqs
