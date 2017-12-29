@@ -9,10 +9,8 @@ deploy:
 	pipreqs . --force
 
 test:
-	docker ps
-	docker build . -f Dockerfile.test -t flaskr-test
-	docker run -p 5000:5000 --rm -it flaskr-test
+	python -m nose -v --nocapture --with-doctest flaskr
 
 start:
-	docker build . -t flaskr
-	docker run -p 5000:5000 --rm -it flaskr
+	flask initdb
+	flask run
